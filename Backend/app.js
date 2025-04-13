@@ -2,6 +2,9 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import login from "./routes/auth.router.js";
+import dotenv from 'dotenv'
+
+dotenv.config({path: './.env'})
 
 const app = express();
 let port = process.env.PORT || 9090;
